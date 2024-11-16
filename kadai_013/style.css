@@ -58,24 +58,29 @@ PC用のスタイル
   #nav-pc>a:active {
     color: #0d0d0d;
   }
+
+  #nav-sp , #menu-sp{
+    display: none;
+  }
 }
 
 
 /*================
 sp用のスタイル 
 =================*/
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
 
    body {
     margin: 0;
   }
 
-  #nav-pc {
-    display: none;
-  }
   #menu-sp {
     float: right;
     padding: 0;
+  }
+
+  #nav-pc {
+    display: none;
   }
 
   #nav-sp {
@@ -124,9 +129,7 @@ sp用のスタイル
   #nav-sp a:hover {
     color: #ffffff;
     text-decoration: underline;
-  }No releases published
-  Create a new release
-  
+  }
 
   #nav-sp a:active {
     color: #ffffff;
